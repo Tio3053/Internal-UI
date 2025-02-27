@@ -218,8 +218,6 @@ local function createGui(parent)
 	end)
 	spawn(function() --Source for Script23
 		local script = Script23
-		local Blur = Instance.new("BlurEffect")
-		Blur.Enabled = false
 		local Frame = script.Parent.UI
 		local Open = false
 		
@@ -229,11 +227,9 @@ local function createGui(parent)
 			if not gameprocess then
 				if Input.KeyCode == Enum.KeyCode.Insert then
 					if Open == false then
-						Blur.Enabled = false
 						Frame.Visible = true
 						Open = true
 					else
-						Blur.Enabled = false
 						Frame.Visible = false
 						Open = false
 					end
