@@ -6,10 +6,11 @@ local function createGui(parent)
 	----ScreenGui1----
 	--Frame2--
 	local Frame2 = Instance.new("Frame",ScreenGui1)
+	Frame2["Visible"] = false
 	Frame2["Name"] = "UI"
 	Frame2["Position"] = UDim2.new(0.369663954, 0, 0.352941185, 0)
 	Frame2["BorderColor3"] = Color3.new(0, 0, 0)
-	Frame2["Size"] = UDim2.new(0.259788692, 0, 0.341382921, 0)
+	Frame2["Size"] = UDim2.new(0.2784338, 0, 0.341382921, 0)
 	Frame2["BorderSizePixel"] = 0
 	Frame2["BackgroundColor3"] = Color3.new(0.156863, 0.156863, 0.156863)
 	----Frame2----
@@ -47,91 +48,88 @@ local function createGui(parent)
 	----UICorner7----
 	--UITextSizeConstraint8--
 	local UITextSizeConstraint8 = Instance.new("UITextSizeConstraint",TextButton5)
-	UITextSizeConstraint8["MaxTextSize"] = 16
+	UITextSizeConstraint8["MaxTextSize"] = 20
 	----UITextSizeConstraint8----
 	--UIAspectRatioConstraint9--
 	local UIAspectRatioConstraint9 = Instance.new("UIAspectRatioConstraint",TextButton5)
-	UIAspectRatioConstraint9["AspectRatio"] = 5.1497626304626465
+	UIAspectRatioConstraint9["AspectRatio"] = 4.742283344268799
 	----UIAspectRatioConstraint9----
-	--UIAspectRatioConstraint10--
-	local UIAspectRatioConstraint10 = Instance.new("UIAspectRatioConstraint",Frame2)
-	UIAspectRatioConstraint10["AspectRatio"] = 1.6436781883239746
-	----UIAspectRatioConstraint10----
-	--TextLabel11--
-	local TextLabel11 = Instance.new("TextLabel",Frame2)
-	TextLabel11["TextWrapped"] = true
-	TextLabel11["TextColor3"] = Color3.new(1, 1, 1)
-	TextLabel11["BorderColor3"] = Color3.new(0, 0, 0)
-	TextLabel11["Text"] = "Impact V1"
-	TextLabel11["TextSize"] = 19
-	TextLabel11["TextStrokeTransparency"] = 0
-	TextLabel11["TextScaled"] = true
-	TextLabel11["Font"] = Enum.Font.Unknown
-	TextLabel11["BackgroundTransparency"] = 1
-	TextLabel11["Position"] = UDim2.new(0.0351201855, 0, 0, 0)
-	TextLabel11["Name"] = "Title"
-	TextLabel11["Size"] = UDim2.new(0.930171072, 0, 0.182641521, 0)
-	TextLabel11["BorderSizePixel"] = 0
-	TextLabel11["BackgroundColor3"] = Color3.new(1, 1, 1)
-	----TextLabel11----
-	--UITextSizeConstraint12--
-	local UITextSizeConstraint12 = Instance.new("UITextSizeConstraint",TextLabel11)
-	UITextSizeConstraint12["MaxTextSize"] = 19
-	----UITextSizeConstraint12----
-	--UIAspectRatioConstraint13--
-	local UIAspectRatioConstraint13 = Instance.new("UIAspectRatioConstraint",TextLabel11)
-	UIAspectRatioConstraint13["AspectRatio"] = 20.037036895751953
-	----UIAspectRatioConstraint13----
-	--TextButton14--
-	local TextButton14 = Instance.new("TextButton",Frame2)
-	TextButton14["RichText"] = true
-	TextButton14["TextColor3"] = Color3.new(1, 1, 1)
-	TextButton14["BorderColor3"] = Color3.new(0, 0, 0)
-	TextButton14["Text"] = "Clear"
-	TextButton14["TextWrapped"] = true
-	TextButton14["TextSize"] = 16
-	TextButton14["Font"] = Enum.Font.SourceSans
-	TextButton14["Name"] = "Clear"
-	TextButton14["Position"] = UDim2.new(0.246354356, 0, 0.899215281, 0)
-	TextButton14["TextScaled"] = true
-	TextButton14["Size"] = UDim2.new(0.215564743, 0, 0.06880299, 0)
-	TextButton14["BorderSizePixel"] = 0
-	TextButton14["BackgroundColor3"] = Color3.new(0.196078, 0.196078, 0.196078)
-	----TextButton14----
-	--UICorner15--
-	local UICorner15 = Instance.new("UICorner",TextButton14)
-	UICorner15["CornerRadius"] = UDim.new(0, 5)
-	----UICorner15----
-	--UITextSizeConstraint16--
-	local UITextSizeConstraint16 = Instance.new("UITextSizeConstraint",TextButton14)
-	UITextSizeConstraint16["MaxTextSize"] = 16
-	----UITextSizeConstraint16----
-	--UIAspectRatioConstraint17--
-	local UIAspectRatioConstraint17 = Instance.new("UIAspectRatioConstraint",TextButton14)
-	UIAspectRatioConstraint17["AspectRatio"] = 5.1497626304626465
-	----UIAspectRatioConstraint17----
-	--Script18--
-	local Script18 = Instance.new("Script",TextButton14)
-	Script18["Name"] = "Clear"
-	----Script18----
+	--TextButton10--
+	local TextButton10 = Instance.new("TextButton",Frame2)
+	TextButton10["RichText"] = true
+	TextButton10["TextColor3"] = Color3.new(1, 1, 1)
+	TextButton10["BorderColor3"] = Color3.new(0, 0, 0)
+	TextButton10["Text"] = "Clear"
+	TextButton10["TextWrapped"] = true
+	TextButton10["TextSize"] = 16
+	TextButton10["Font"] = Enum.Font.SourceSans
+	TextButton10["Name"] = "Clear"
+	TextButton10["Position"] = UDim2.new(0.246354356, 0, 0.899215281, 0)
+	TextButton10["TextScaled"] = true
+	TextButton10["Size"] = UDim2.new(0.215564743, 0, 0.06880299, 0)
+	TextButton10["BorderSizePixel"] = 0
+	TextButton10["BackgroundColor3"] = Color3.new(0.196078, 0.196078, 0.196078)
+	----TextButton10----
+	--UICorner11--
+	local UICorner11 = Instance.new("UICorner",TextButton10)
+	UICorner11["CornerRadius"] = UDim.new(0, 5)
+	----UICorner11----
+	--Script12--
+	local Script12 = Instance.new("Script",TextButton10)
+	Script12["Name"] = "Clear"
+	----Script12----
+	--UITextSizeConstraint13--
+	local UITextSizeConstraint13 = Instance.new("UITextSizeConstraint",TextButton10)
+	UITextSizeConstraint13["MaxTextSize"] = 20
+	----UITextSizeConstraint13----
+	--UIAspectRatioConstraint14--
+	local UIAspectRatioConstraint14 = Instance.new("UIAspectRatioConstraint",TextButton10)
+	UIAspectRatioConstraint14["AspectRatio"] = 4.742283344268799
+	----UIAspectRatioConstraint14----
+	--TextLabel15--
+	local TextLabel15 = Instance.new("TextLabel",Frame2)
+	TextLabel15["TextWrapped"] = true
+	TextLabel15["TextColor3"] = Color3.new(1, 1, 1)
+	TextLabel15["BorderColor3"] = Color3.new(0, 0, 0)
+	TextLabel15["Text"] = "Impact V1"
+	TextLabel15["TextSize"] = 17
+	TextLabel15["Font"] = Enum.Font.FredokaOne
+	TextLabel15["BackgroundTransparency"] = 1
+	TextLabel15["TextScaled"] = true
+	TextLabel15["Size"] = UDim2.new(1.00000012, 0, 0.0777082145, 0)
+	TextLabel15["Name"] = "Title"
+	TextLabel15["BorderSizePixel"] = 0
+	TextLabel15["BackgroundColor3"] = Color3.new(1, 1, 1)
+	----TextLabel15----
+	--UICorner16--
+	local UICorner16 = Instance.new("UICorner",TextLabel15)
+	----UICorner16----
+	--UITextSizeConstraint17--
+	local UITextSizeConstraint17 = Instance.new("UITextSizeConstraint",TextLabel15)
+	UITextSizeConstraint17["MaxTextSize"] = 17
+	----UITextSizeConstraint17----
+	--UIAspectRatioConstraint18--
+	local UIAspectRatioConstraint18 = Instance.new("UIAspectRatioConstraint",TextLabel15)
+	UIAspectRatioConstraint18["AspectRatio"] = 19.478261947631836
+	----UIAspectRatioConstraint18----
 	--TextBox19--
 	local TextBox19 = Instance.new("TextBox",Frame2)
-	TextBox19["MultiLine"] = true
+	TextBox19["CursorPosition"] = -1
 	TextBox19["TextWrapped"] = true
 	TextBox19["ClearTextOnFocus"] = false
 	TextBox19["TextColor3"] = Color3.new(1, 1, 1)
 	TextBox19["BorderColor3"] = Color3.new(0, 0, 0)
 	TextBox19["Text"] = "print(game.PlaceId)"
-	TextBox19["Size"] = UDim2.new(0.965863466, 0, 0.802035749, 0)
+	TextBox19["Size"] = UDim2.new(0.96875006, 0, 0.797353864, 0)
 	TextBox19["TextXAlignment"] = Enum.TextXAlignment.Left
 	TextBox19["TextSize"] = 16
 	TextBox19["Font"] = Enum.Font.SourceSans
 	TextBox19["Name"] = "Editor"
-	TextBox19["Position"] = UDim2.new(0.0173087362, 0, 0.0759128481, 0)
+	TextBox19["Position"] = UDim2.new(0.0153007517, 0, 0.0777082145, 0)
 	TextBox19["TextScaled"] = true
 	TextBox19["TextYAlignment"] = Enum.TextYAlignment.Top
 	TextBox19["BorderSizePixel"] = 0
-	TextBox19["BackgroundColor3"] = Color3.new(0.137255, 0.137255, 0.137255)
+	TextBox19["BackgroundColor3"] = Color3.new(0.121569, 0.121569, 0.121569)
 	----TextBox19----
 	--UICorner20--
 	local UICorner20 = Instance.new("UICorner",TextBox19)
@@ -142,17 +140,21 @@ local function createGui(parent)
 	----UITextSizeConstraint21----
 	--UIAspectRatioConstraint22--
 	local UIAspectRatioConstraint22 = Instance.new("UIAspectRatioConstraint",TextBox19)
-	UIAspectRatioConstraint22["AspectRatio"] = 1.979423999786377
+	UIAspectRatioConstraint22["AspectRatio"] = 1.8389830589294434
 	----UIAspectRatioConstraint22----
-	--Script23--
-	local Script23 = Instance.new("Script",ScreenGui1)
-	Script23["Name"] = "Toggle"
-	Script23["Enabled"] = false
-	----Script23----
+	--UIAspectRatioConstraint23--
+	local UIAspectRatioConstraint23 = Instance.new("UIAspectRatioConstraint",Frame2)
+	UIAspectRatioConstraint23["AspectRatio"] = 1.5136207342147827
+	----UIAspectRatioConstraint23----
 	--Script24--
 	local Script24 = Instance.new("Script",ScreenGui1)
-	Script24["Name"] = "Notif"
+	Script24["Name"] = "Toggle"
+	Script24["Enabled"] = false
 	----Script24----
+	--Script25--
+	local Script25 = Instance.new("Script",ScreenGui1)
+	Script25["Name"] = "Notif"
+	----Script25----
 	spawn(function() --Source for Script4
 		local script = Script4
 		local UserInputService = game:GetService("UserInputService")
@@ -208,16 +210,16 @@ local function createGui(parent)
 			end
 		end)
 	end)
-	spawn(function() --Source for Script18
-		local script = Script18
+	spawn(function() --Source for Script12
+		local script = Script12
 		local Textbox = script.Parent.Parent.Editor
 		
 		script.Parent.MouseButton1Click:Connect(function()
 			Textbox.Text = ""
 		end)
 	end)
-	spawn(function() --Source for Script23
-		local script = Script23
+	spawn(function() --Source for Script24
+		local script = Script24
 		local Frame = script.Parent.UI
 		local Open = false
 		
@@ -237,10 +239,9 @@ local function createGui(parent)
 			end
 		end)
 	end)
-	spawn(function() --Source for Script24
-		local script = Script24
+	spawn(function() --Source for Script25
+		local script = Script25
 		local Enabled = true
-		game.Players.LocalPlayer.PlayerGui.InternalUI.UI.Visible = false
 		local StarterGui = game:GetService("StarterGui")
 		
 		StarterGui:SetCore("SendNotification",{
