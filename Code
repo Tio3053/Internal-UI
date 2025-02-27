@@ -240,6 +240,7 @@ local function createGui(parent)
 	spawn(function() --Source for Script24
 		local script = Script24
 		local Enabled = true
+		game.Players.LocalPlayer.PlayerGui.InternalUI.UI.Visible = false
 		local StarterGui = game:GetService("StarterGui")
 		
 		StarterGui:SetCore("SendNotification",{
