@@ -91,7 +91,7 @@ local function createGui(parent)
 	TextLabel15["TextWrapped"] = true
 	TextLabel15["TextColor3"] = Color3.new(1, 1, 1)
 	TextLabel15["BorderColor3"] = Color3.new(0, 0, 0)
-	TextLabel15["Text"] = "Impact V1"
+	TextLabel15["Text"] = "Dice v1.0.0"
 	TextLabel15["TextSize"] = 17
 	TextLabel15["Font"] = Enum.Font.FredokaOne
 	TextLabel15["BackgroundTransparency"] = 1
@@ -245,14 +245,14 @@ local function createGui(parent)
 		local StarterGui = game:GetService("StarterGui")
 		
 		StarterGui:SetCore("SendNotification",{
-			Title = "Impact V1",
+			Title = "Dice v1.0.0",
 			Text = "Press Insert To Open"
 		})
 		
 		
 		task.wait(1)
 		script.Parent.Toggle.Enabled = Enabled
-		warn("Impact V1 Initialized")
+		warn("Dice v1.0.0 Initialized")
 	end)
 end
 createGui(game.CoreGui) --coregui by default you should but change it
